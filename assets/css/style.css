@@ -1,0 +1,55 @@
+header {
+    background-color: orangered;
+    color: white;
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#rules {
+    background-color: #FAD7A0;
+    color: green;
+    font-weight: bold; 
+
+
+}
+
+#Target-Score {
+    background-color: green;
+    color: purple;
+    padding: 0px 150px 75px 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+#win-loss {
+    background-color: skyblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+#Ruby, #Sapphire, #Emerald, #Diamond {
+    float: left;
+}
+
+#score {
+    background-color: teal;
+    color: white;
+
+}
+
+#User-Score {
+    background-color: teal;
+    color: white;
+    padding: 10px 200px 40px 5px;
+    
+}
+
+body {
+    background-image: url(../images/bananas.png);
+
+}

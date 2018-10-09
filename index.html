@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <!--Making it look the same in all browsers-->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <!--Bootstrap Reference-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!--Styling-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <title>Crystal Collector Game</title>
+    </head>
+    
+    <body>
+        <div class = "container">
+            <div class = "row">
+                <header>Crystal Collector!</header>
+            </div>
+            <div class = "row">
+                <div class = "col-md-6" id = "rules">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-3">
+                    <span id = "Target-Score">#</span>
+                </div>
+                <div class = "col-md-2" id = "win-loss">
+                    <p>Wins: <span id="wins">0</span></p>
+                        
+                    <p>Losses: <span id="losses">0</span></p>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-2">
+                    <img src="https://via.placeholder.com/140x100" alt="Ruby" id = "Ruby">
+                </div>
+                <div class = "col-md-2">
+                    <img src="https://via.placeholder.com/140x100" alt="Sapphire" id = "Sapphire">
+                </div>
+                <div class = "col-md-2">
+                    <img src="https://via.placeholder.com/140x100" alt="Emerald" id = "Emerald">
+                </div>
+                <div class = "col-md-2">
+                    <img src="https://via.placeholder.com/140x100" alt="Diamond" id = "Diamond">
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-4">
+                    <p id ="score">Your total score is:</p>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-4">
+                    <span id ="User-Score">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container">
+           
+                
+        </div>
+
+
+
+
+    </body>
+
+
+
+</html>
