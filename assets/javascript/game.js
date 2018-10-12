@@ -15,6 +15,16 @@ $(document).ready(function() {
     var losses = 0;
 
 });
+
+function reset() {
+    var userScore = 0;
+    var targetScore = Math.floor(Math.random() * 101) + 19;
+    var Ruby = Math.floor(Math.random() * 12) + 1;
+    var Sapphire = Math.floor(Math.random() * 12) + 1;
+    var Emerald = Math.floor(Math.random() * 12) + 1;
+    var Diamond = Math.floor(Math.random() * 12) + 1;
+}
+
 //Redeclared for outer functions
 var userScore = 0;
 var targetScore = Math.floor(Math.random() * 101) + 19;
@@ -34,6 +44,25 @@ $("#Ruby").click(function () {
     $("#User-Score").text(userScore + Ruby);
     //change the value of userScore to the new total after clicking the Ruby
     userScore += Ruby;
+
+    //If total is = Target-Score you win, add 1 to win counter and update html
+    if (userScore === targetScore) {
+        console.log("Winner!");
+        wins = wins++;
+        $("#wins").text = wins;
+        reset();
+        //Reset everything besides win/loss counter
+    }
+
+    //If total is over Target-Score you Lose, add 1 to lose counter and update html
+    else if (userScore > targetScore) {
+        console.log("Loser!");
+        losses = losses++;
+        $("#losses").text = losses;
+        reset();
+        //Reset everything besides win/loss counter
+    }
+
 })
 
 $("#Sapphire").click(function () {
@@ -41,6 +70,25 @@ $("#Sapphire").click(function () {
     $("#User-Score").text(userScore + Sapphire);
     //change the value of userScore to the new total after clicking the Sapphire
     userScore += Sapphire;
+
+    //If total is = Target-Score you win, add 1 to win counter and update html
+    if (userScore === targetScore) {
+        console.log("Winner!");
+        wins = wins++;
+        $("#wins").text = wins;
+        reset();
+        //Reset everything besides win/loss counter
+    }
+
+    //If total is over Target-Score you Lose, add 1 to lose counter and update html
+    else if (userScore > targetScore) {
+        console.log("Loser!");
+        losses = losses++;
+        $("#losses").text = losses;
+        reset();
+        //Reset everything besides win/loss counter
+    }
+
 })
 
 $("#Emerald").click(function () {
@@ -48,6 +96,25 @@ $("#Emerald").click(function () {
     $("#User-Score").text(userScore + Emerald);
     //change the value of userScore to the new total after clicking the Emerald
     userScore += Emerald;
+
+    //If total is = Target-Score you win, add 1 to win counter and update html
+    if (userScore === targetScore) {
+        console.log("Winner!");
+        wins = wins++;
+        $("#wins").text = wins;
+        reset();
+        //Reset everything besides win/loss counter
+    }
+
+    //If total is over Target-Score you Lose, add 1 to lose counter and update html
+    else if (userScore > targetScore) {
+        console.log("Loser!");
+        losses = losses++;
+        $("#losses").text = losses;
+        reset();
+        //Reset everything besides win/loss counter
+    }
+
 })
 
 $("#Diamond").click(function () {
@@ -55,14 +122,25 @@ $("#Diamond").click(function () {
     $("#User-Score").text(userScore + Diamond);
     // the value of userScore to the new total after clicking the Diamond
     userScore += Diamond;
+
+    //If total is = Target-Score you win, add 1 to win counter and update html
+    if (userScore === targetScore) {
+        console.log("Winner!");
+        wins = wins++;
+        $("#wins").text = wins;
+        reset();
+        //Reset everything besides win/loss counter
+    }
+
+    //If total is over Target-Score you Lose, add 1 to lose counter and update html
+    else if (userScore > targetScore) {
+        console.log("Loser!");
+        losses = losses++;
+        $("#losses").text = losses;
+        reset();
+        //Reset everything besides win/loss counter
+    }
+
 })
 
-//If total is over Target-Score you Lose, add 1 to lose counter
-if (userScore > targetScore) {
-    losses++;
-}
 
-//If total is = Target-Score you win, add 1 to win counter
-if (userScore === targetScore) {
-    wins++;
-}
