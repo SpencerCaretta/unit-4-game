@@ -11,18 +11,21 @@ $(document).ready(function() {
     var Emerald = Math.floor(Math.random() * 12) + 1;
     var Diamond = Math.floor(Math.random() * 12) + 1;
     //Wins and Losses start at 0 upon beginning of playing
-    var wins = document.getElementById("wins");
-    var losses = document.getElementById("losses");
+    var wins = document.getElementById("winsText");
+    var losses = document.getElementById("lossesText");
 
 });
 
 function restart() {
-    var userScore = 0;
-    var targetScore = Math.floor(Math.random() * 101) + 19;
-    var Ruby = Math.floor(Math.random() * 12) + 1;
-    var Sapphire = Math.floor(Math.random() * 12) + 1;
-    var Emerald = Math.floor(Math.random() * 12) + 1;
-    var Diamond = Math.floor(Math.random() * 12) + 1;
+    //make userScore back to 0 and recalculate all random numbers
+    userScore = 0;
+    $("#User-Score").text = userScore;
+    targetScore = Math.floor(Math.random() * 101) + 19;
+    $("#Target-Score").text(targetScore);
+    Ruby = Math.floor(Math.random() * 12) + 1;
+    Sapphire = Math.floor(Math.random() * 12) + 1;
+    Emerald= Math.floor(Math.random() * 12) + 1;  
+    Diamond = Math.floor(Math.random() * 12) + 1;
 };
 
 //Redeclared for outer functions
